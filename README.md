@@ -1,14 +1,17 @@
 NestedObjectSetters
 ===================
 
-Categories on NSMutableDictionary and NSUserDefauts that enable setting nested objects via key paths.
+Categories on NSMutableDictionary and NSUserDefaults that enable setting nested objects via key paths.
 
 The following two instance methods are added to `NSMutableDictionary` and `NSUserDefaults`
 
 ```objc
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath;
 
-- (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates;
+- (void)setNestedObject:(id)object
+             forKeyPath:(NSString *)keyPath
+createIntermediateDictionaries:(BOOL)createIntermediates
+    replaceIntermediateObjects:(BOOL)replaceIntermediates;
 ```
 
 The first method is a convenience method for the second – passing `YES` as both parameters – as that is likely the most wanted behavior.
