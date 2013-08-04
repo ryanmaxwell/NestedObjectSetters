@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		942AE9BC17ADD29500E77A41 /* NSMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B817ADD29500E77A41 /* NSMutableDictionaryTests.m */; };
+		942AE9BD17ADD29500E77A41 /* NSUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */; };
+		942AE9C117ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */; };
+		949AF6A217AC73F700D3CD6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949AF6A117AC73F700D3CD6A /* XCTest.framework */; };
+		94ED4DD917AE1DEC00253C33 /* NestedObjectSetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		942AE9B517ADD29500E77A41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		942AE9B617ADD29500E77A41 /* NestedObjectSetterTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NestedObjectSetterTests-Info.plist"; sourceTree = "<group>"; };
+		942AE9B717ADD29500E77A41 /* NestedObjectSetterTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NestedObjectSetterTests-Prefix.pch"; sourceTree = "<group>"; };
+		942AE9B817ADD29500E77A41 /* NSMutableDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionaryTests.m; sourceTree = "<group>"; };
+		942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsTests.m; sourceTree = "<group>"; };
+		942AE9BF17ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNestedObjectSetterTests.h; sourceTree = "<group>"; };
+		942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNestedObjectSetterTests.m; sourceTree = "<group>"; };
+		949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedObjectSetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949AF6A117AC73F700D3CD6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		94EC537C17AB592D00030DA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94ED4DD717AE1DEC00253C33 /* NestedObjectSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestedObjectSetters.h; sourceTree = SOURCE_ROOT; };
+		94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedObjectSetters.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		949AF69D17AC73F700D3CD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949AF6A217AC73F700D3CD6A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		942AE9B317ADD29500E77A41 /* NestedObjectSetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				942AE9BF17ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.h */,
+				942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */,
+				942AE9B817ADD29500E77A41 /* NSMutableDictionaryTests.m */,
+				942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */,
+				942AE9BE17ADD2A200E77A41 /* Supporting Files */,
+			);
+			path = NestedObjectSetterTests;
+			sourceTree = "<group>";
+		};
+		942AE9BE17ADD2A200E77A41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				942AE9B417ADD29500E77A41 /* InfoPlist.strings */,
+				942AE9B617ADD29500E77A41 /* NestedObjectSetterTests-Info.plist */,
+				942AE9B717ADD29500E77A41 /* NestedObjectSetterTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94EC537017AB592D00030DA0 = {
+			isa = PBXGroup;
+			children = (
+				94EC537E17AB592D00030DA0 /* NestedObjectSetters */,
+				942AE9B317ADD29500E77A41 /* NestedObjectSetterTests */,
+				94EC537B17AB592D00030DA0 /* Frameworks */,
+				94EC537A17AB592D00030DA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94EC537A17AB592D00030DA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94EC537B17AB592D00030DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94EC537C17AB592D00030DA0 /* Foundation.framework */,
+				949AF6A117AC73F700D3CD6A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94EC537E17AB592D00030DA0 /* NestedObjectSetters */ = {
+			isa = PBXGroup;
+			children = (
+				94ED4DD717AE1DEC00253C33 /* NestedObjectSetters.h */,
+				94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */,
+			);
+			name = NestedObjectSetters;
+			path = KeyPathCreation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		949AF69F17AC73F700D3CD6A /* NestedObjectSetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949AF6AE17AC73F700D3CD6A /* Build configuration list for PBXNativeTarget "NestedObjectSetterTests" */;
+			buildPhases = (
+				949AF69C17AC73F700D3CD6A /* Sources */,
+				949AF69D17AC73F700D3CD6A /* Frameworks */,
+				949AF69E17AC73F700D3CD6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestedObjectSetterTests;
+			productName = "NestedObjectSetters Tests";
+			productReference = 949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94EC537117AB592D00030DA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ryan Maxwell";
+				TargetAttributes = {
+					949AF69F17AC73F700D3CD6A = {
+						TestTargetID = 94EC537817AB592D00030DA0;
+					};
+				};
+			};
+			buildConfigurationList = 94EC537417AB592D00030DA0 /* Build configuration list for PBXProject "NestedObjectSetters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94EC537017AB592D00030DA0;
+			productRefGroup = 94EC537A17AB592D00030DA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				949AF69F17AC73F700D3CD6A /* NestedObjectSetterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		949AF69E17AC73F700D3CD6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		949AF69C17AC73F700D3CD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED4DD917AE1DEC00253C33 /* NestedObjectSetters.m in Sources */,
+				942AE9C117ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m in Sources */,
+				942AE9BD17ADD29500E77A41 /* NSUserDefaultsTests.m in Sources */,
+				942AE9BC17ADD29500E77A41 /* NSMutableDictionaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		942AE9B417ADD29500E77A41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				942AE9B517ADD29500E77A41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		949AF6AF17AC73F700D3CD6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NestedObjectSetterTests/NestedObjectSetterTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NestedObjectSetterTests/NestedObjectSetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		949AF6B017AC73F700D3CD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NestedObjectSetterTests/NestedObjectSetterTests-Prefix.pch";
+				INFOPLIST_FILE = "NestedObjectSetterTests/NestedObjectSetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		94EC538517AB592D00030DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		94EC538617AB592D00030DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949AF6AE17AC73F700D3CD6A /* Build configuration list for PBXNativeTarget "NestedObjectSetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949AF6AF17AC73F700D3CD6A /* Debug */,
+				949AF6B017AC73F700D3CD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EC537417AB592D00030DA0 /* Build configuration list for PBXProject "NestedObjectSetters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EC538517AB592D00030DA0 /* Debug */,
+				94EC538617AB592D00030DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94EC537117AB592D00030DA0 /* Project object */;
+}
