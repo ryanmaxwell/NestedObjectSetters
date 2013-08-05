@@ -93,7 +93,7 @@ static NSString *const KeyPathDelimiter = @".";
 #else
     
 - (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+    [self nos_setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
 - (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
@@ -124,7 +124,7 @@ static NSString *const KeyPathDelimiter = @".";
 #else
 
 - (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+    [self nos_setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
 - (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
