@@ -26,7 +26,7 @@ static NSString *const KeyPathDelimiter = @".";
     
     NSArray *pathComponents = [keyPath componentsSeparatedByString:KeyPathDelimiter];
     
-    NSString *rootKey = pathComponents[0];
+    NSString *rootKey = [pathComponents objectAtIndex:0];
     
     NSMutableDictionary *replacementDict = [NSMutableDictionary dictionary];
     
@@ -43,21 +43,21 @@ static NSString *const KeyPathDelimiter = @".";
             
             if (createIntermediates) {
                 NSMutableDictionary *newNode = [NSMutableDictionary dictionary];
-                previousReplacement[path] = newNode;
+                [previousReplacement setObject:newNode forKey:path];
                 previousReplacement = newNode;
             } else {
                 return;
             }
         } else if ([currentObject isKindOfClass:[NSDictionary class]]) {
             NSMutableDictionary *newNode = [currentObject mutableCopy];
-            previousReplacement[path] = newNode;
+            [previousReplacement setObject:newNode forKey:path];
             previousReplacement = newNode;
         } else {
             reachedDictionaryLeaf = YES;
             
             if (replaceIntermediates) {
                 NSMutableDictionary *newNode = [NSMutableDictionary dictionary];
-                previousReplacement[path] = newNode;
+                [previousReplacement setObject:newNode forKey:path];
                 previousReplacement = newNode;
             } else {
                 return;
@@ -69,7 +69,7 @@ static NSString *const KeyPathDelimiter = @".";
     
     [replacementDict setValue:object forKeyPath:keyPath];
     
-    [target setObject:replacementDict[rootKey] forKey:rootKey];
+    [target setObject:[replacementDict objectForKey:rootKey] forKey:rootKey];
 }
 
 @end
@@ -117,8 +117,11 @@ static NSString *const KeyPathDelimiter = @".";
 }
 
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
-    
-    [NestedObjectSetters setNestedObject:object onObject:self forKeyPath:keyPath createIntermediateDictionaries:createIntermediates replaceIntermediateObjects:replaceIntermediates];
+    [NestedObjectSetters setNestedObject:object
+                                onObject:self
+                              forKeyPath:keyPath
+          createIntermediateDictionaries:createIntermediates
+              replaceIntermediateObjects:replaceIntermediates];
 }
 
 #else
