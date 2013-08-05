@@ -16,9 +16,11 @@ NSLog(@"%@", dict[@"a"][@"b"]);
 
 Slightly rewriting the statement makes it more obvious:
 
-`[[dict objectForKey:@"a"] setObject:@"foo" forKey:@"b];`
+```objc
+[[dict objectForKey:@"a"] setObject:@"foo" forKey:@"b];
+```
 
-The first `objectForKey:` method returns nil, and the second `setObject:ForKey:` fails silently.
+The first `objectForKey:` method returns nil, and the subsequent `setObject:ForKey:` fails silently.
 
 Another common case is when I make a mutable copy of a dictionary - any dictionaries contained within the dictionary still remain immutable, which leads to annoying, error-prone code like this to simply set a new value at anything other than the root level:
 
@@ -51,7 +53,7 @@ NSMutableDictionary *newColorsOfTheRainbow = (currentColorsOfTheRainbow) ? [curr
 
 ```
 
-## Interface
+## Category Interface
 
 The following two instance methods are added to `NSMutableDictionary` and `NSUserDefaults`
 
@@ -86,13 +88,13 @@ The methods are prefixed with `nos_` by default, to avoid any namespace collisio
 
 To use the methods without the prefix, add `#define NESTEDOBJECTSETTERS_NO_PREFIX 1` to your project’s Prefix file, or `NESTEDOBJECTSETTERS_NO_PREFIX=1` to your Target’s Build Settings in the Preprocessor Macros section.
 
-## Project Requirements
-
-* This Xcode project uses the XCTest framework and so requires >= Xcode 5
-
 ## Category Requirements
 
 The categories are compatible with all versions of Mac OS X and iOS.
+
+## Project Requirements
+
+* This Xcode project uses the XCTest framework and so requires >= Xcode 5
 
 ## Usage
 
