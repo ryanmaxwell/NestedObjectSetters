@@ -12,7 +12,7 @@ static NSString *const KeyPathDelimiter = @".";
 
 @implementation NestedObjectSetters
 
-+ (void)setNestedObject:(id)object onObject:(id)target forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
++ (void)setObject:(id)object onObject:(id)target forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
     
     if (!keyPath) {
         [NSException raise:NSInvalidArgumentException format:nil];
@@ -78,12 +78,12 @@ static NSString *const KeyPathDelimiter = @".";
 
 #if NESTEDOBJECTSETTERS_NO_PREFIX
 
-- (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+- (void)setObject:(id)object forKeyPath:(NSString *)keyPath {
+    [self setObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
-- (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
-    [NestedObjectSetters setNestedObject:object
+- (void)setObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
+    [NestedObjectSetters setObject:object
                                 onObject:self
                               forKeyPath:keyPath
           createIntermediateDictionaries:createIntermediates
@@ -92,12 +92,12 @@ static NSString *const KeyPathDelimiter = @".";
     
 #else
     
-- (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self nos_setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+- (void)nos_setObject:(id)object forKeyPath:(NSString *)keyPath {
+    [self nos_setObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
-- (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
-    [NestedObjectSetters setNestedObject:object
+- (void)nos_setObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
+    [NestedObjectSetters setObject:object
                                 onObject:self
                               forKeyPath:keyPath
           createIntermediateDictionaries:createIntermediates
@@ -112,12 +112,12 @@ static NSString *const KeyPathDelimiter = @".";
 
 #if NESTEDOBJECTSETTERS_NO_PREFIX
 
-- (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+- (void)setObject:(id)object forKeyPath:(NSString *)keyPath {
+    [self setObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
-- (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
-    [NestedObjectSetters setNestedObject:object
+- (void)setObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
+    [NestedObjectSetters setObject:object
                                 onObject:self
                               forKeyPath:keyPath
           createIntermediateDictionaries:createIntermediates
@@ -126,12 +126,12 @@ static NSString *const KeyPathDelimiter = @".";
 
 #else
 
-- (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
-    [self nos_setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
+- (void)nos_setObject:(id)object forKeyPath:(NSString *)keyPath {
+    [self nos_setObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
 }
 
-- (void)nos_setNestedObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
-    [NestedObjectSetters setNestedObject:object
+- (void)nos_setObject:(id)object forKeyPath:(NSString *)keyPath createIntermediateDictionaries:(BOOL)createIntermediates replaceIntermediateObjects:(BOOL)replaceIntermediates {
+    [NestedObjectSetters setObject:object
                                 onObject:self
                               forKeyPath:keyPath
           createIntermediateDictionaries:createIntermediates

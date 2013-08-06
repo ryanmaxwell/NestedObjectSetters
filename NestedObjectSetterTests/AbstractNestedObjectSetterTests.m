@@ -29,7 +29,7 @@
     NSString *const nestedKeyPath = [NSString stringWithFormat:@"%@.%@", keyA, keyB];
     NSString *const stringValue = @"value";
     
-    [self.testObject setNestedObject:stringValue forKeyPath:nestedKeyPath];
+    [self.testObject setObject:stringValue forKeyPath:nestedKeyPath];
     
     XCTAssertTrue([[[self.testObject objectForKey:keyA] objectForKey:keyB] isEqualToString:stringValue], @"String value for key path '%@' should be '%@'", nestedKeyPath, stringValue);
 }
@@ -42,7 +42,7 @@
 
     BOOL const boolValue = YES;
 
-    [self.testObject setNestedObject:@(boolValue) forKeyPath:nestedKeyPath];
+    [self.testObject setObject:@(boolValue) forKeyPath:nestedKeyPath];
 
     XCTAssertTrue([[[self.testObject objectForKey:keyA] objectForKey:keyB] boolValue], @"Bool value for key path '%@' should be %d", nestedKeyPath, boolValue);
 }
@@ -60,7 +60,7 @@
     
     XCTAssertTrue([[[self.testObject objectForKey:keyA] objectForKey:keyB] isEqualToString:stringValue1], @"String value for key path '%@' should be '%@'", nestedKeyPath, stringValue1);
 
-    [self.testObject setNestedObject:stringValue2 forKeyPath:nestedKeyPath];
+    [self.testObject setObject:stringValue2 forKeyPath:nestedKeyPath];
 
     XCTAssertTrue([[[self.testObject objectForKey:keyA] objectForKey:keyB] isEqualToString:stringValue2], @"String value for key path '%@' should be '%@'", nestedKeyPath, stringValue2);
 }
@@ -73,11 +73,11 @@
 
     NSString *const nestedKeyPath = [NSString stringWithFormat:@"%@.%@", keyA, keyB];
 
-    [self.testObject setNestedObject:stringValue forKeyPath:nestedKeyPath];
+    [self.testObject setObject:stringValue forKeyPath:nestedKeyPath];
 
     XCTAssertTrue([[[self.testObject objectForKey:keyA] objectForKey:keyB] isEqualToString:stringValue], @"String value for key path '%@' should be '%@'", nestedKeyPath, stringValue);
 
-    [self.testObject setNestedObject:nil forKeyPath:nestedKeyPath];
+    [self.testObject setObject:nil forKeyPath:nestedKeyPath];
 
     XCTAssertNotNil([self.testObject objectForKey:keyA], @"Dictionary value for key '%@' should exist", keyA);
     XCTAssertNil([[self.testObject objectForKey:keyA] objectForKey:keyB], @"Value for key path '%@' should be nil", nestedKeyPath);
@@ -86,7 +86,7 @@
 - (void)testNilKeyPathThrowsException {
     NSString *const stringValue = @"value";
     
-    XCTAssertThrowsSpecificNamed([self.testObject setNestedObject:stringValue forKeyPath:nil], NSException, NSInvalidArgumentException, @"Setting a nil key path should throw an NSInvalidArgumentException.");
+    XCTAssertThrowsSpecificNamed([self.testObject setObject:stringValue forKeyPath:nil], NSException, NSInvalidArgumentException, @"Setting a nil key path should throw an NSInvalidArgumentException.");
 }
 
 - (void)testEmptyKeyPathSetsValue {
@@ -109,7 +109,7 @@
     XCTAssertTrue([self.testObject objectForKey:keyA], @"String value for key '%@' should be '%@'", keyA, stringValue);
 
     NSString *const nestedKeyPath = [NSString stringWithFormat:@"%@.%@", keyA, keyB];
-    [self.testObject setNestedObject:stringValue forKeyPath:nestedKeyPath createIntermediateDictionaries:YES replaceIntermediateObjects:NO];
+    [self.testObject setObject:stringValue forKeyPath:nestedKeyPath createIntermediateDictionaries:YES replaceIntermediateObjects:NO];
 
     XCTAssertTrue([[self.testObject objectForKey:keyA] isEqualToString:stringValue], @"String value for key '%@' should be '%@'", keyA, stringValue);
 }
@@ -121,7 +121,7 @@
     NSString *const stringValue = @"value";
 
     NSString *const nestedKeyPath = [NSString stringWithFormat:@"%@.%@", keyA, keyB];
-    [self.testObject setNestedObject:stringValue forKeyPath:nestedKeyPath createIntermediateDictionaries:NO replaceIntermediateObjects:YES];
+    [self.testObject setObject:stringValue forKeyPath:nestedKeyPath createIntermediateDictionaries:NO replaceIntermediateObjects:YES];
 
     XCTAssertNil([[self.testObject objectForKey:keyA] objectForKey:keyB], @"Value for key path '%@' should be nil", nestedKeyPath);
 }
