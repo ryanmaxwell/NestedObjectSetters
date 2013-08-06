@@ -17,7 +17,7 @@ NSLog(@"%@", dict[@"a"][@"b"]);
 Slightly rewriting the statement makes it more obvious:
 
 ```objc
-[[dict objectForKey:@"a"] setObject:@"foo" forKey:@"b];
+[[dict objectForKey:@"a"] setObject:@"foo" forKey:@"b"];
 ```
 
 The first `objectForKey:` method returns nil, and the subsequent `setObject:ForKey:` fails silently.
