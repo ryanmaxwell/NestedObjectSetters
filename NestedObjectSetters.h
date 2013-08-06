@@ -16,7 +16,7 @@
 
 @interface NSMutableDictionary (NestedObjectSetters)
 
-#ifdef NESTEDOBJECTSETTERS_NO_PREFIX
+#if NESTEDOBJECTSETTERS_NO_PREFIX
 
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath;
 
@@ -34,7 +34,7 @@
 
 @interface NSUserDefaults (NestedObjectSetters)
 
-#ifdef NESTEDOBJECTSETTERS_NO_PREFIX
+#if NESTEDOBJECTSETTERS_NO_PREFIX
 
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath;
 

@@ -76,7 +76,7 @@ static NSString *const KeyPathDelimiter = @".";
 
 @implementation NSMutableDictionary (NestedObjectSetters)
 
-#ifdef NESTEDOBJECTSETTERS_NO_PREFIX
+#if NESTEDOBJECTSETTERS_NO_PREFIX
 
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
     [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
@@ -110,7 +110,7 @@ static NSString *const KeyPathDelimiter = @".";
 
 @implementation NSUserDefaults (NestedObjectSetters)
 
-#ifdef NESTEDOBJECTSETTERS_NO_PREFIX
+#if NESTEDOBJECTSETTERS_NO_PREFIX
 
 - (void)setNestedObject:(id)object forKeyPath:(NSString *)keyPath {
     [self setNestedObject:object forKeyPath:keyPath createIntermediateDictionaries:YES replaceIntermediateObjects:YES];
