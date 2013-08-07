@@ -19,13 +19,11 @@ Pod::Spec.new do |s|
   s.author       = { "Ryan Maxwell" => "ryanm@xwell.co.nz" }
   s.source       = { :git => "https://github.com/ryanmaxwell/NestedObjectSetters.git", :tag => "1.0" }
   
+  s.documentation = { :appledoc => ['--project-name', 'NestedObjectSetters']}
+  
   s.ios.deployment_target = '4.3'
   s.osx.deployment_target = '10.6'
   
-  # A list of file patterns which select the source files that should be
-  # added to the Pods project. If the pattern is a directory then the
-  # path will automatically have '*.{h,m,mm,c,cpp}' appended.
-  #
   s.source_files = 'NestedObjectSetters.{h,m}'
   s.exclude_files = 'NestedObjectSetterTests'
   
