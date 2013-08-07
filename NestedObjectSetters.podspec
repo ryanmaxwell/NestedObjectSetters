@@ -3,16 +3,16 @@ Pod::Spec.new do |s|
   s.version      = "1.0"
   s.summary      = "Categories on NSMutableDictionary and NSUserDefaults that enable setting nested objects via key paths."
   s.description  = <<-DESC
-                   The following two instance methods are added to `NSMutableDictionary` and `NSUserDefaults`
+                   The following two instance methods are added to `NSMutableDictionary` and `NSUserDefaults`:
                    
-                   ```objc
+                   `
                    - (void)setObject:(id)object forKeyPath:(NSString *)keyPath;
                    
                    - (void)setObject:(id)object
                           forKeyPath:(NSString *)keyPath
                           createIntermediateDictionaries:(BOOL)createIntermediates
                               replaceIntermediateObjects:(BOOL)replaceIntermediates;
-                   ```
+                   `
                   DESC
   s.homepage     = "http://EXAMPLE/NestedObjectSetters"
   s.license      = 'MIT'
