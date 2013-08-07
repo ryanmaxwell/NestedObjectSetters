@@ -98,4 +98,5 @@ The categories are compiled with ARC, so are compatible with Mac OS X >= 10.6 an
 
 ## Usage
 
-Add `NestedObjectSetters.h/m` to your project. Cocoapod coming soon.
+* Manual Install: Add `NestedObjectSetters.h/m` to your project.
+* Cocoapods: `pod 'NestedObjectSetters'`
