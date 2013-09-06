@@ -11,8 +11,39 @@
 		942AE9BC17ADD29500E77A41 /* NSMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B817ADD29500E77A41 /* NSMutableDictionaryTests.m */; };
 		942AE9BD17ADD29500E77A41 /* NSUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */; };
 		942AE9C117ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */; };
+		9441551717DA945F00571EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EC537C17AB592D00030DA0 /* Foundation.framework */; };
+		9441551A17DA945F00571EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441551917DA945F00571EBF /* main.m */; };
+		9441551E17DA945F00571EBF /* FoundationApp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9441551D17DA945F00571EBF /* FoundationApp.1 */; };
+		9441552217DA947E00571EBF /* NestedObjectSetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 940961F917DA85F000A00975 /* NestedObjectSetters.m */; };
+		9441552517DA948300571EBF /* NestedObjectSetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 940961F917DA85F000A00975 /* NestedObjectSetters.m */; };
+		9441552617DA948300571EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9441551917DA945F00571EBF /* main.m */; };
+		9441552817DA948300571EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EC537C17AB592D00030DA0 /* Foundation.framework */; };
+		9441552A17DA948300571EBF /* FoundationApp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9441551D17DA945F00571EBF /* FoundationApp.1 */; };
 		949AF6A217AC73F700D3CD6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949AF6A117AC73F700D3CD6A /* XCTest.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9441551417DA945F00571EBF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				9441551E17DA945F00571EBF /* FoundationApp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9441552917DA948300571EBF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				9441552A17DA948300571EBF /* FoundationApp.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		940961F817DA85F000A00975 /* NestedObjectSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestedObjectSetters.h; path = ../NestedObjectSetters.h; sourceTree = "<group>"; };
@@ -24,12 +55,33 @@
 		942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsTests.m; sourceTree = "<group>"; };
 		942AE9BF17ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractNestedObjectSetterTests.h; sourceTree = "<group>"; };
 		942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractNestedObjectSetterTests.m; sourceTree = "<group>"; };
+		9441551617DA945F00571EBF /* FoundationApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FoundationApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		9441551917DA945F00571EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9441551C17DA945F00571EBF /* FoundationApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationApp-Prefix.pch"; sourceTree = "<group>"; };
+		9441551D17DA945F00571EBF /* FoundationApp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FoundationApp.1; sourceTree = "<group>"; };
+		9441552E17DA948300571EBF /* FoundationApp copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FoundationApp copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedObjectSetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		949AF6A117AC73F700D3CD6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94EC537C17AB592D00030DA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9441551317DA945F00571EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441551717DA945F00571EBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441552717DA948300571EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441552817DA948300571EBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		949AF69D17AC73F700D3CD6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,12 +115,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9441551817DA945F00571EBF /* FoundationApp */ = {
+			isa = PBXGroup;
+			children = (
+				9441551917DA945F00571EBF /* main.m */,
+				9441551D17DA945F00571EBF /* FoundationApp.1 */,
+				9441551B17DA945F00571EBF /* Supporting Files */,
+			);
+			path = FoundationApp;
+			sourceTree = "<group>";
+		};
+		9441551B17DA945F00571EBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9441551C17DA945F00571EBF /* FoundationApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		94EC537017AB592D00030DA0 = {
 			isa = PBXGroup;
 			children = (
 				940961F817DA85F000A00975 /* NestedObjectSetters.h */,
 				940961F917DA85F000A00975 /* NestedObjectSetters.m */,
 				942AE9B317ADD29500E77A41 /* NestedObjectSetterTests */,
+				9441551817DA945F00571EBF /* FoundationApp */,
 				94EC537B17AB592D00030DA0 /* Frameworks */,
 				94EC537A17AB592D00030DA0 /* Products */,
 			);
@@ -78,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */,
+				9441551617DA945F00571EBF /* FoundationApp */,
+				9441552E17DA948300571EBF /* FoundationApp copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +167,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9441551517DA945F00571EBF /* FoundationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441552117DA945F00571EBF /* Build configuration list for PBXNativeTarget "FoundationApp" */;
+			buildPhases = (
+				9441551217DA945F00571EBF /* Sources */,
+				9441551317DA945F00571EBF /* Frameworks */,
+				9441551417DA945F00571EBF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationApp;
+			productName = FoundationApp;
+			productReference = 9441551617DA945F00571EBF /* FoundationApp */;
+			productType = "com.apple.product-type.tool";
+		};
+		9441552317DA948300571EBF /* FoundationApp-ARC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9441552B17DA948300571EBF /* Build configuration list for PBXNativeTarget "FoundationApp-ARC" */;
+			buildPhases = (
+				9441552417DA948300571EBF /* Sources */,
+				9441552717DA948300571EBF /* Frameworks */,
+				9441552917DA948300571EBF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundationApp-ARC";
+			productName = FoundationApp;
+			productReference = 9441552E17DA948300571EBF /* FoundationApp copy */;
+			productType = "com.apple.product-type.tool";
+		};
 		949AF69F17AC73F700D3CD6A /* NestedObjectSetterTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 949AF6AE17AC73F700D3CD6A /* Build configuration list for PBXNativeTarget "NestedObjectSetterTests" */;
@@ -138,6 +245,8 @@
 			projectRoot = "";
 			targets = (
 				949AF69F17AC73F700D3CD6A /* NestedObjectSetterTests */,
+				9441551517DA945F00571EBF /* FoundationApp */,
+				9441552317DA948300571EBF /* FoundationApp-ARC */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +262,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9441551217DA945F00571EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441552217DA947E00571EBF /* NestedObjectSetters.m in Sources */,
+				9441551A17DA945F00571EBF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9441552417DA948300571EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9441552517DA948300571EBF /* NestedObjectSetters.m in Sources */,
+				9441552617DA948300571EBF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		949AF69C17AC73F700D3CD6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +305,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9441551F17DA945F00571EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationApp/FoundationApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9441552017DA945F00571EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationApp/FoundationApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9441552C17DA948300571EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationApp/FoundationApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "FoundationApp copy";
+			};
+			name = Debug;
+		};
+		9441552D17DA948300571EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationApp/FoundationApp-Prefix.pch";
+				PRODUCT_NAME = "FoundationApp copy";
+			};
+			name = Release;
+		};
 		949AF6AF17AC73F700D3CD6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +458,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9441552117DA945F00571EBF /* Build configuration list for PBXNativeTarget "FoundationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441551F17DA945F00571EBF /* Debug */,
+				9441552017DA945F00571EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9441552B17DA948300571EBF /* Build configuration list for PBXNativeTarget "FoundationApp-ARC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9441552C17DA948300571EBF /* Debug */,
+				9441552D17DA948300571EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		949AF6AE17AC73F700D3CD6A /* Build configuration list for PBXNativeTarget "NestedObjectSetterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
