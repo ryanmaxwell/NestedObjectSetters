@@ -90,7 +90,7 @@ To use the methods without the prefix, add `#define NESTEDOBJECTSETTERS_NO_PREFI
 
 ## Category Requirements
 
-The categories are compiled with ARC, so are compatible with Mac OS X >= 10.6 and iOS >= 4.3
+The categories are compatible with both ARC and traditional retain/release code, and can be used on all versions of iOS and OS X.
 
 ## Project Requirements
 
