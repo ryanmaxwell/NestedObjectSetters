@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940961FA17DA85F000A00975 /* NestedObjectSetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 940961F917DA85F000A00975 /* NestedObjectSetters.m */; };
 		942AE9BC17ADD29500E77A41 /* NSMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B817ADD29500E77A41 /* NSMutableDictionaryTests.m */; };
 		942AE9BD17ADD29500E77A41 /* NSUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9B917ADD29500E77A41 /* NSUserDefaultsTests.m */; };
 		942AE9C117ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942AE9C017ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m */; };
 		949AF6A217AC73F700D3CD6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949AF6A117AC73F700D3CD6A /* XCTest.framework */; };
-		94ED4DD917AE1DEC00253C33 /* NestedObjectSetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940961F817DA85F000A00975 /* NestedObjectSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestedObjectSetters.h; path = ../NestedObjectSetters.h; sourceTree = "<group>"; };
+		940961F917DA85F000A00975 /* NestedObjectSetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestedObjectSetters.m; path = ../NestedObjectSetters.m; sourceTree = "<group>"; };
 		942AE9B517ADD29500E77A41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		942AE9B617ADD29500E77A41 /* NestedObjectSetterTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NestedObjectSetterTests-Info.plist"; sourceTree = "<group>"; };
 		942AE9B717ADD29500E77A41 /* NestedObjectSetterTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NestedObjectSetterTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -25,8 +27,6 @@
 		949AF6A017AC73F700D3CD6A /* NestedObjectSetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedObjectSetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		949AF6A117AC73F700D3CD6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94EC537C17AB592D00030DA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		94ED4DD717AE1DEC00253C33 /* NestedObjectSetters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestedObjectSetters.h; sourceTree = SOURCE_ROOT; };
-		94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedObjectSetters.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,8 @@
 		94EC537017AB592D00030DA0 = {
 			isa = PBXGroup;
 			children = (
-				94EC537E17AB592D00030DA0 /* NestedObjectSetters */,
+				940961F817DA85F000A00975 /* NestedObjectSetters.h */,
+				940961F917DA85F000A00975 /* NestedObjectSetters.m */,
 				942AE9B317ADD29500E77A41 /* NestedObjectSetterTests */,
 				94EC537B17AB592D00030DA0 /* Frameworks */,
 				94EC537A17AB592D00030DA0 /* Products */,
@@ -88,16 +89,6 @@
 				949AF6A117AC73F700D3CD6A /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		94EC537E17AB592D00030DA0 /* NestedObjectSetters */ = {
-			isa = PBXGroup;
-			children = (
-				94ED4DD717AE1DEC00253C33 /* NestedObjectSetters.h */,
-				94ED4DD817AE1DEC00253C33 /* NestedObjectSetters.m */,
-			);
-			name = NestedObjectSetters;
-			path = KeyPathCreation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94ED4DD917AE1DEC00253C33 /* NestedObjectSetters.m in Sources */,
+				940961FA17DA85F000A00975 /* NestedObjectSetters.m in Sources */,
 				942AE9C117ADD2EA00E77A41 /* AbstractNestedObjectSetterTests.m in Sources */,
 				942AE9BD17ADD29500E77A41 /* NSUserDefaultsTests.m in Sources */,
 				942AE9BC17ADD29500E77A41 /* NSMutableDictionaryTests.m in Sources */,
