@@ -50,6 +50,11 @@ static NSString *const KeyPathDelimiter = @".";
             }
         } else if ([currentObject isKindOfClass:[NSDictionary class]]) {
             NSMutableDictionary *newNode = [currentObject mutableCopy];
+
+            #if !__has_feature(objc_arc)
+                [newNode autorelease];
+            #endif
+            
             [previousReplacement setObject:newNode forKey:path];
             previousReplacement = newNode;
         } else {
