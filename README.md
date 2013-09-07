@@ -94,7 +94,7 @@ The categories are compatible with both ARC and traditional retain/release code,
 
 ## Project Requirements
 
-* This Xcode project uses the XCTest framework and so requires >= Xcode 5
+The Xcode test project uses the XCTest framework and so requires >= Xcode 5.
 
 ## Usage
 
