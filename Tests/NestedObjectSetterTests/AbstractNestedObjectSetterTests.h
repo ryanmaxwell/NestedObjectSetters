@@ -11,6 +11,11 @@
 
 @interface AbstractNestedObjectSetterTests : XCTestCase
 
+extern NSString *const TestObjectKeyA;
+extern NSString *const TestObjectKeyB;
+extern NSString *const TestObjectKeyPath;
+extern NSString *const TestObjectEmptyKey;
+
 @property (strong, nonatomic) id testObject;
 
 - (void)testSetNestedStringValue;

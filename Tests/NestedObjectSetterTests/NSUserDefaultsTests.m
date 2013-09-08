@@ -20,6 +20,10 @@
     [NSUserDefaults resetStandardUserDefaults];
     
     self.testObject = [NSUserDefaults standardUserDefaults];
+    
+    /* sometimes initializing with values in the defaults - even though we called resetStandardUserDefaults above! */
+    [self.testObject removeObjectForKey:TestObjectKeyA];
+    [self.testObject removeObjectForKey:TestObjectEmptyKey];
 }
 
 - (void)tearDown {
