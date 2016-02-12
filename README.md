@@ -99,4 +99,4 @@ The Xcode test project uses the XCTest framework and so requires >= Xcode 5.
 ## Usage
 
 * Manual Install: Add `NestedObjectSetters.h/m` to your project.
-* Cocoapods: `pod 'NestedObjectSetters'`
+* CocoaPods: `pod 'NestedObjectSetters'`
